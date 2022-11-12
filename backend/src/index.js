@@ -6,7 +6,7 @@ const {router} = require('./router')
 const server = new Koa()
 
 server.use(cors())
-      .use(jwtValidateMd)
+     // .use(jwtValidateMd)
       .use(router.routes())
       .use(router.allowedMethods())
       

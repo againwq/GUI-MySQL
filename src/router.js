@@ -38,11 +38,11 @@ const router = new VueRouter({
   routes
 })
 
-router.beforeEach((to, from, next) => {
+/* router.beforeEach((to, from, next) => {
   const state = store.state
   const token = sessionStorage.getItem('token')
   if(to.path == "/login") next()
   else if(state.alreadyLogin && token) next()
   else next('/login')
-})
+}) */
 export default router

@@ -21,7 +21,6 @@ async function ConnectController(ctx) {
                 msg: "无法连接到此数据库！"
             }
         }
-        console.log(err)
     }
 }
 

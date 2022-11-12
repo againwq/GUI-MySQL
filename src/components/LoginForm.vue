@@ -12,7 +12,7 @@
             fill="#1296db" p-id="9422"></path>
           <path d="M288 160m-32 0a32 32 0 1 0 64 0 32 32 0 1 0-64 0Z" fill="#1296db" p-id="9423"></path>
         </svg>
-        <div class="title">vue-navicat</div>
+        <div class="title">MySQL-GUI</div>
       </div>
       <div class="inputContainer">
         <input class="username" placeholder="username" v-model="username">
@@ -94,7 +94,8 @@ export default {
     text-align: center;
     height: 25px;
     line-height: 25px;
-    font-family: "Helvetica Neue"
+    font-family: "Source code pro";
+    font-weight:600;
   }
 }
 

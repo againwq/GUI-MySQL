@@ -1,5 +1,3 @@
-const mysql = require('mysql2/promise')
-
 async function getTables(connection) {
     const [result, fields] = await connection.execute('show tables')
     let tables = []

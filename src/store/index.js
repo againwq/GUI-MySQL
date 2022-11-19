@@ -13,7 +13,7 @@ export default new Vuex.Store({
     alreadyLogin:false,
     database:'',
     inquiry: false,
-    table: ''
+    nowTable: ''
   },
   mutations, 
   actions,

@@ -20,8 +20,8 @@ export default{
       setLogin(state, alreadyLogin){
           state.alreadyLogin = alreadyLogin
       },
-      setTable(state, table){
-          state.table = table
+      setTable(state, nowTable){
+          state.nowTable = nowTable
       },
       clearAll(state){
         state.alreadyLogin = false

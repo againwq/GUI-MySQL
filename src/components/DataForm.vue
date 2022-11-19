@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import { mapActions,mapState,mapMutations } from 'vuex'
+import { mapActions,mapState } from 'vuex'
 import EventBus, {EventType} from '../event'
 export default {
     name: 'dataform',
@@ -75,6 +75,5 @@ export default {
 .form-container{
   width: 100%;
   overflow: auto;
-  
 }
 </style>

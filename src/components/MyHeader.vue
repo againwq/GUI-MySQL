@@ -4,7 +4,7 @@
             <div class="icon"></div>
             <div class="showstate">
                 <div class="showdb">database:  {{ database }}</div>
-                <div class="showtable">table:  {{ table }}</div>
+                <div class="showtable">table:  {{ nowTable }}</div>
             </div>
         </div>
         <button class="link-button" @click="dialogVisible = true">连接数据库</button>
@@ -40,7 +40,7 @@ export default {
         }
     },
     computed: {
-        ...mapState(['connecting', 'database', 'table'])
+        ...mapState(['connecting', 'database', 'nowTable'])
     },
     methods: {
         ...mapActions(['connect', 'loginExit']),

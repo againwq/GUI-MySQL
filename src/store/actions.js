@@ -1,6 +1,6 @@
 
 import setConnect from '@/service/connect'
-import getTableData from '../service/getData'
+import getTableData from '../service/dataManage'
 import getResult from '../service/login'
 
 export default {

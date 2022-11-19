@@ -3,7 +3,10 @@
     <MyHeader></MyHeader>
     <div class="main">
       <div class="nav">
-        <div class="table" v-for="(table, index) in tables" :key="index" @click="showData(table)">
+        <div class="table" v-for="(table, index) in tables" 
+        :key="index" 
+        @click="showData(table)" 
+        :class="{active: table == nowTable}">
         {{ table }}</div>
       </div>
       <div class="container">
@@ -14,7 +17,7 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
+import { mapState } from 'vuex'
 import DataForm from '../components/DataForm.vue'
 import MyHeader from '../components/MyHeader.vue'
 import EventBus, {EventType} from '../event'
@@ -25,6 +28,9 @@ export default {
     return {  
       tables:[],
     }
+  },
+  computed:{
+    ...mapState(['nowTable'])
   },
   mounted(){
      EventBus.$on(EventType.connect, (data) => {
@@ -86,5 +92,8 @@ export default {
     height: 650px;
     overflow: auto;
   }
+}
+.active{
+  background-color: #409eff;
 }
 </style>
